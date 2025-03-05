@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="whychooseus.css">
+
+</head>
+<body>
+    
+    
+<!-- ......................... -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left Corner: Bold Heading -->
+        <a class="navbar-brand" href="index.html">مظلات وسواتر</a>
+
+        <!-- Center Navigation Links -->
+        <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item"><a class="nav-link" href="service.html">خدمات</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">معلومات عنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="whychooseus.html">لماذا تختارنا؟</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">اتصل بنا</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.forEach(l => l.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
+
+<!-- ....................... -->
+    <!-- Why Choose Us Section -->
+    <section class="choose" id="choose">
+        <h2 class="choose-title">لماذا تختار خدمات الخيام الخاصة بنا في المملكة العربية السعودية؟</h2>
+        <div class="choose-container container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 choose-card">
+                    <h3  onclick="toggleDetails(this)">مواد عالية الجودة <i class="fas fa-plus-circle"></i></h3>
+                    <p style="font-size: large;">نستخدم مواد عالية الجودة ومتينة لضمان حلول خيام تدوم طويلاً.</p>
+                </div>
+                <div class="col-md-8 choose-card">
+                    <h3 onclick="toggleDetails(this)">أسعار معقولة <i class="fas fa-plus-circle"></i></h3>
+                    <p style="font-size: large;">أسعارنا تنافسية مع الحفاظ على الجودة العالية.</p>
+                </div>
+                <div class="col-md-8 choose-card">
+                    <h3 onclick="toggleDetails(this)">تصاميم مخصصة <i class="fas fa-plus-circle"></i></h3>
+                    <p style="font-size: large;">يمكنك تخصيص تصميم الخيمة وفقًا لاحتياجاتك.</p>
+                </div>
+                <div class="col-md-8 choose-card">
+                    <h3 onclick="toggleDetails(this)">التسليم في الوقت المحدد <i class="fas fa-plus-circle"></i></h3>
+                    <p style="font-size: large;">نضمن لك التسليم والتركيب في الوقت المحدد لفعالياتك.</p>
+                </div>
+                <div class="col-md-8 choose-card">
+                    <h3 onclick="toggleDetails(this)">خدمة عملاء متميزة<i class="fas fa-plus-circle"></i></h3>
+                    <p style="font-size: large;">دعم العملاء لدينا متاح دائمًا لمساعدتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function toggleDetails(element) {
+            let details = element.nextElementSibling;
+            let icon = element.querySelector("i");
+            
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                icon.style.transform = "rotate(45deg)";
+            } else {
+                details.style.display = "none";
+                icon.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+</html>

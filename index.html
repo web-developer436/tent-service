@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مظلات وسواتر</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Corner: Bold Heading -->
+            <a class="navbar-brand" href="index.html">مظلات وسواتر</a>
+    
+            <!-- Center Navigation Links -->
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item"><a class="nav-link" href="service.html">خدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">معلومات عنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="whychooseus.html">لماذا تختارنا؟</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    navLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+    
+    <!-- Background Image -->
+    <div class="background-image"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1><b>خدمات تركيب الخيام</b></h1>
+        <p class="paragraph" id="tent-paragraph">
+            الخيام.موسسة.سهول.الاعمار
+<br>
+تفصيل.خيام.ملكى.ديكورت.
+<br>
+ملكي عادي مظلات سواتر.قرميد
+<br>
+النسيم.طريق.سعد.بن.عبدالر
+<br>
+حمن.الاول.خط.مية
+<br>
+معلم.محمد.اقبال
+<br>
+جوال 0506025620 
+        </p>
+    </div>
+
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/966506025620" target="_blank" class="whatsapp-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById('tent-paragraph').classList.add('show');
+            }, 500); // Adjust delay as needed
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+ 
+</section>
+
+
+
+
+</body>
+</html>
